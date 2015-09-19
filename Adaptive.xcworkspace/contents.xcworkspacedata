@@ -5,12 +5,15 @@
       location = "group:Adaptive Common"
       name = "Adaptive Common">
       <FileRef
-         location = "group:Main.storyboard">
+         location = "group:/Users/Bob/Documents/iOS/Projects/Adaptive/Adaptive Common/Adaptive.storyboard">
       </FileRef>
       <FileRef
          location = "group:ViewController.swift">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Adaptive UI/Adaptive UI.xcodeproj">
+   </FileRef>
    <FileRef
       location = "group:Adaptive One/Adaptive One.xcodeproj">
    </FileRef>

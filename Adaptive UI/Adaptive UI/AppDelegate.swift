@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Adaptive One
+//  Adaptive UI
 //
-//  Created by Bob Wakefield on 7/25/15.
+//  Created by Bob Wakefield on 8/12/15.
 //  Copyright © 2015 Bob Wakefield. All rights reserved.
 //
 
@@ -13,8 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var titleCount = 0
     func makeTitleText () -> String {
-        return "Adaptive One"
+        ++self.titleCount
+        switch self.titleCount {
+        case 1:
+            return "Adaptive One"
+        case 2:
+            return "Adaptive Two"
+        default:
+            return "Unknown \(self.titleCount)!"
+        }
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

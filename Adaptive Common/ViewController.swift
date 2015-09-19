@@ -9,15 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
-    var appTitleText = ""
-        {
-            didSet
-            {
-                self.appTitle.text = appTitleText
-            }
-        }
-
+        
     @IBOutlet weak var appTitle: UILabel!
     @IBOutlet weak var horizontalSizeClass: UILabel!
     @IBOutlet weak var verticalSizeClass: UILabel!
@@ -26,12 +18,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var windowWidth: UILabel!
     @IBOutlet weak var windowHeight: UILabel!
     @IBOutlet weak var testTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appTitle.text = appDelegate.titleText
+        appTitle.text = appDelegate.makeTitleText()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,21 +38,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.windowHeight.text = "\(self.view.bounds.size.height)"
     }
 
+    // UITraitEnvironment Protocol
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
 
         super.traitCollectionDidChange(previousTraitCollection)
+        
+        // current trait collection has already been updated
+        let traitCollection = self.traitCollection;
 
-        var horzSizeText: String
-        switch self.traitCollection.horizontalSizeClass {
+        switch traitCollection.horizontalSizeClass {
 
             case .Compact:
-                horzSizeText = "Compact"
+                self.horizontalSizeClass.text = "Compact"
             case .Regular:
-                horzSizeText = "Regular"
+                self.horizontalSizeClass.text = "Regular"
             default:
-                horzSizeText = "Unspecified"
+                self.horizontalSizeClass.text = "Unspecified"
         }
-        self.horizontalSizeClass.text = horzSizeText
         
         switch self.traitCollection.verticalSizeClass {
 
@@ -99,6 +93,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return false
+    }
+
+    @IBAction func tappedView(sender: AnyObject) {
+        
+        testTextField.resignFirstResponder()
     }
 }
 
