@@ -12,8 +12,8 @@
 		C4250E401B640C8600EFB595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4250E3E1B640C8600EFB595 /* LaunchScreen.storyboard */; };
 		C4250E4B1B640C8600EFB595 /* Adaptive_TwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4250E4A1B640C8600EFB595 /* Adaptive_TwoTests.swift */; };
 		C4250E561B640C8600EFB595 /* Adaptive_TwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4250E551B640C8600EFB595 /* Adaptive_TwoUITests.swift */; };
-		C4250E691B640CDE00EFB595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4250E671B640CDE00EFB595 /* Main.storyboard */; };
 		C4250E6A1B640CDE00EFB595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4250E681B640CDE00EFB595 /* ViewController.swift */; };
+		C4EBDADD1B8E91C700B26054 /* Adaptive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDADC1B8E91C700B26054 /* Adaptive.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		C4250E511B640C8600EFB595 /* Adaptive TwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adaptive TwoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4250E551B640C8600EFB595 /* Adaptive_TwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaptive_TwoUITests.swift; sourceTree = "<group>"; };
 		C4250E571B640C8600EFB595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4250E671B640CDE00EFB595 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../Adaptive Common/Main.storyboard"; sourceTree = "<group>"; };
 		C4250E681B640CDE00EFB595 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Adaptive Common/ViewController.swift"; sourceTree = "<group>"; };
+		C4EBDADC1B8E91C700B26054 /* Adaptive.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Adaptive.storyboard; path = "../../Adaptive Common/Adaptive.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		C4250E341B640C8600EFB595 /* Adaptive Two */ = {
 			isa = PBXGroup;
 			children = (
-				C4250E671B640CDE00EFB595 /* Main.storyboard */,
+				C4EBDADC1B8E91C700B26054 /* Adaptive.storyboard */,
 				C4250E681B640CDE00EFB595 /* ViewController.swift */,
 				C4250E351B640C8600EFB595 /* AppDelegate.swift */,
 				C4250E3C1B640C8600EFB595 /* Assets.xcassets */,
@@ -228,8 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4250E691B640CDE00EFB595 /* Main.storyboard in Resources */,
 				C4250E401B640C8600EFB595 /* LaunchScreen.storyboard in Resources */,
+				C4EBDADD1B8E91C700B26054 /* Adaptive.storyboard in Resources */,
 				C4250E3D1B640C8600EFB595 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Adaptive Two.xcscheme</key>
+		<key>Adaptive UI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C4250E311B640C8600EFB595</key>
+		<key>C43EF7B21B7C268E00548DAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4250E451B640C8600EFB595</key>
+		<key>C43EF7C61B7C268E00548DAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4250E501B640C8600EFB595</key>
+		<key>C43EF7D11B7C268E00548DAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
